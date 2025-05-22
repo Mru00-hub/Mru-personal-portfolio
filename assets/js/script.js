@@ -143,17 +143,23 @@ const pages = document.querySelectorAll("[data-page]");
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
+    const clickedNavLink = this;
+    const targetPageName = clickedNavLink.innerHTML.toLowerCase();
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
+    // Deactivate ALL navigation links
+    navigationLinks.forEach(link => link.classList.remove("active"));
+
+    // Activate ONLY the clicked navigation link
+    clickedNavLink.classList.add("active");
+
+    // Deactivate ALL pages, then activate the target page
+    pages.forEach(page => {
+      if (page.dataset.page === targetPageName) {
+        page.classList.add("active");
+        window.scrollTo(0, 0); // Scroll to top when page changes
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        page.classList.remove("active");
       }
-    }
-
+    });
   });
 }
