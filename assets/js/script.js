@@ -77,8 +77,6 @@ for (let i = 0; i < selectItems.length; i++) {
 
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
-const selectValue = document.querySelector("[data-select-value]");
 
 const filterFunc = function (selectedValue) {
 
