@@ -22,18 +22,7 @@
    */
 
   /* gradient */
-
-  --bg-gradient-bluish-1: linear-gradient(
-    to bottom right, 
-    hsl(210, 100%, 98%) 0%, 
-    hsl(210, 80%, 92%) 100%
-  );
-  --bg-gradient-bluish-2: linear-gradient(
-    135deg, 
-    hsl(210, 100%, 96%) 0%, 
-    hsl(208, 80%, 89%) 60%
-    hsl(206, 70%, 84%) 100%
-  );
+	
   --card-gradient: linear-gradient(
   135deg,
   hsl(224, 76%, 42%) 0%,
@@ -373,16 +362,16 @@ main {
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: var(--bg-gradient-bluish-2);
+  background: var(--card-gradient);
   transition: var(--transition-1);
   z-index: -1;
 }
 
 .info_more-btn:hover,
-.info_more-btn:focus { background: var(--bg-gradient-bluish-1); }
+.info_more-btn:focus { background: var(--card-gradient); }
 
 .info_more-btn:hover::before,
-.info_more-btn:focus::before { background: var(--bg-gradient-bluish-2); }
+.info_more-btn:focus::before { background: var(--card-gradient); }
 
 .info_more-btn span { display: none; }
 
@@ -696,7 +685,7 @@ main {
 .modal-close-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 .modal-avatar-box {
-  background: var(--bg-gradient-bluish-1);
+  background: var(--card-gradient);
   width: max-content;
   border-radius: 14px;
   margin-bottom: 15px;
@@ -1200,7 +1189,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-bluish-2);
+  background: var(--card-gradient);
   border-radius: inherit;
   z-index: -1;
   transition: var(--transition-1);
@@ -1208,9 +1197,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn ion-icon { font-size: 16px; }
 
-.form-btn:hover { background: var(--bg-gradient-bluish-1); }
+.form-btn:hover { background: var(--card-gradient); }
 
-.form-btn:hover::before { background: var(--bg-gradient-bluish-2); }
+.form-btn:hover::before { background: var(--card-gradient); }
 
 .form-btn:disabled {
   opacity: 0.7;
@@ -1219,7 +1208,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover { background: var(--border-gradient-bluish); }
 
-.form-btn:disabled:hover::before { background: var(--bg-gradient-bluish-2); }
+.form-btn:disabled:hover::before { background: var(--card-gradient); }
 
 
 
