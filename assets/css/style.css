@@ -332,7 +332,7 @@ main {
 }
 
 .avatar-box {
-  background: var(--bg-gradient-bluish-1);
+  background: var(--card-gradient);
   border-radius: 20px;
 }
 
