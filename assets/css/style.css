@@ -649,7 +649,7 @@ main {
   position: relative;
   padding: 15px;
   margin: 15px 12px;
-  border: 1px solid var(--deep-slate-blue);
+  border: 1px solid var(--card-gradient);
   border-radius: 14px;
   box-shadow: var(--shadow-5);
   transform: scale(1.2);
