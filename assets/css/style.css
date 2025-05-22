@@ -893,7 +893,7 @@ main {
   top: calc(100% + 6px);
   width: 100%;
   padding: 6px;
-  border: 1px solid vdispl(--deep-slate-blue);
+  border: 1px solid var(--deep-slate-blue);
   border-radius: 14px;
   z-index: 2;
   opacity: 0;
